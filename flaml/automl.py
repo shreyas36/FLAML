@@ -2371,7 +2371,7 @@ class AutoML(BaseEstimator):
             fit_kwargs_by_estimator.copy()
         )  # shallow copy of fit_kwargs_by_estimator
         self._state.weight_val = sample_weight_val
-
+        print("before validate")
         self._validate_data(
             X_train, y_train, dataframe, label, X_val, y_val, groups_val, groups
         )
