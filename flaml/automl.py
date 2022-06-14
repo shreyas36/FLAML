@@ -2253,6 +2253,7 @@ class AutoML(BaseEstimator):
                     gpu_per_trial: float, default = 0 | A float of the number of gpus per trial,
                     only used by TransformersEstimator and XGBoostSklearnEstimator.
         """
+        print("start")
 
         self._state._start_time_flag = self._start_time_flag = time.time()
         task = task or self._settings.get("task")
