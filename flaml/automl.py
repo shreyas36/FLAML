@@ -1101,7 +1101,7 @@ class AutoML(BaseEstimator):
                 "or all columns of X are integer ids (tokenized)"
             )
 
-        if issparse(X_train_all):
+        if issparse(X_train_all) or True:
             self._transformer = self._label_transformer = False
             self._X_train_all, self._y_train_all = X, y
         else:
@@ -2375,6 +2375,7 @@ class AutoML(BaseEstimator):
         self._validate_data(
             X_train, y_train, dataframe, label, X_val, y_val, groups_val, groups
         )
+        print("validated")
         self._search_states = {}  # key: estimator name; value: SearchState
         self._random = np.random.RandomState(RANDOM_SEED)
         self._seed = seed if seed is not None else 20
