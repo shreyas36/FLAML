@@ -1,5 +1,5 @@
 # !
-#  * Copyright (c) Microsoft Corporation. All rights reserved.
+#  * Copyright (c) FLAML authors. All rights reserved.
 #  * Licensed under the MIT License. See LICENSE file in the
 #  * project root for license information.
 import numpy as np
@@ -10,7 +10,7 @@ from pandas import DataFrame, Series
 from .training_log import training_log_reader
 
 from datetime import datetime
-from typing import Dict, Union, List
+from typing import Union
 
 # TODO: if your task is not specified in here, define your task as an all-capitalized word
 SEQCLASSIFICATION = "seq-classification"
@@ -270,7 +270,7 @@ class DataTransformer:
                 X[str_columns] = X[str_columns].astype("string")
             self._str_columns = str_columns
         elif isinstance(X, DataFrame):
-            X = X.copy()
+            # X = X.copy()
             n = X.shape[0]
             cat_columns, num_columns, datetime_columns = [], [], []
             drop = False
@@ -388,7 +388,7 @@ class DataTransformer:
         Returns:
             X: Processed numpy array or pandas dataframe of training data.
         """
-        X = X.copy()
+        # X = X.copy()
 
         if _is_nlp_task(self._task):
             # if the mode is NLP, check the type of input, each column must be either string or
@@ -422,7 +422,7 @@ class DataTransformer:
                         X[new_col_name] = new_col_value
                 X[column] = X[column].map(datetime.toordinal)
                 del tmp_dt
-            X = X[cat_columns + num_columns].copy()
+            X = X[cat_columns + num_columns]
             if self._task in TS_FORECAST:
                 X.insert(0, TS_TIMESTAMP_COL, ds_col)
             for column in cat_columns:
