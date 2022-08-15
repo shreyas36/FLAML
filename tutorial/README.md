@@ -7,7 +7,7 @@ Time: 9:30 AM ET
 Location: 101
 Duration: 3 hours
 
-For the most up-to-date information, see the [SIGKDD'22 Program Agenda](https://kdd.org/kdd2022/programAgenda.html)
+For the most up-to-date information, see the [SIGKDD'22 Program Agenda](https://www.appsheet.com/start/52fdb507-2f8c-41d8-a982-b6bd18933ba8#appName=KDD2022TutorialsRoomFinal-1001136659&group=%5B%5D&row=81&sort=%5B%7B%22Column%22%3A%22Day+Time%22%2C%22Order%22%3A%22Ascending%22%7D%5D&table=KDD+2022+Tutorials&view=KDD2022Tutorials0805_Detail)
 
 ## What Will You Learn?
 
