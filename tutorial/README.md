@@ -39,7 +39,7 @@ For the most up-to-date information, see the [SIGKDD'22 Program Agenda](https://
 - Time series forecasting
     - [Notebook: AutoML for Time Series Forecast tasks](https://github.com/microsoft/FLAML/blob/tutorial/notebook/automl_time_series_forecast.ipynb); [Open In Colab](https://colab.research.google.com/github/microsoft/FLAML/blob/tutorial/notebook/automl_time_series_forecast.ipynb) 
 - Natural language processing
-    - [Notebook: AutoML for NLP tasks](https://github.com/microsoft/FLAML/blob/main/notebook/automl_nlp.ipynb); [Open In Colab](https://colab.research.google.com/github/microsoft/FLAML/blob/main/notebook/automl_nlp.ipynb) 
+    - [Notebook: AutoML for NLP tasks](https://github.com/microsoft/FLAML/blob/tutorial/notebook/automl_nlp.ipynb); [Open In Colab](https://colab.research.google.com/github/microsoft/FLAML/blob/tutorial/notebook/automl_nlp.ipynb) 
 - Online AutoML
     - [Notebook: Online AutoML with Vowpal Wabbit](https://github.com/microsoft/FLAML/blob/tutorial/notebook/autovw.ipynb); [Open In Colab](https://colab.research.google.com/github/microsoft/FLAML/blob/tutorial/notebook/autovw.ipynb) 
 - Fair AutoML
